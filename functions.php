@@ -55,3 +55,6 @@ function disable_emojis_remove_dns_prefetch( $urls, $relation_type ) {
     }
     return $urls;
 }
+
+// SVG icons functions and filters
+require get_parent_theme_file_path( '/inc/icon-functions.php' );
