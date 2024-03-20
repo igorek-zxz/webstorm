@@ -1,4 +1,6 @@
-import './scss/nulled.scss';
-import menuModule from './js/menu.js';
+import './scss/module-nulled.scss';
+import './scss/module-main.scss';
+
+import menuModule from './js/module-menu.js';
 
 menuModule();
