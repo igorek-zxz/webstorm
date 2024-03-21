@@ -1,0 +1,93 @@
+@import './variables.scss';
+
+
+.storm-header {
+    display: block;
+    overflow: hidden;
+    color: $color-white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
+
+    &__row {
+        width: 100%;
+    }
+
+    &__row-first {
+        background-color: $color-darkGrey;
+    }
+
+    &__container {
+        max-width: $content-width;
+        padding: 5px 20px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+
+    &__left,
+    &__right {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    &__left {
+        justify-content: flex-start;
+
+        & .storm-header__contact-link {
+            &:last-child {
+                @include laptop {
+                    display: none;
+                }
+            }
+
+            &:nth-child(2) {
+                @include tablet {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &__right {
+        justify-content: flex-end;
+        flex-grow: 1;
+    }
+
+    &__contact-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+
+        & .storm-header__icon {
+            color: $color-white;
+            transition: all 0.3s;
+
+            svg {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        & .storm-header__text {
+            color: $color-white;
+            font-family: $font-text;
+            font-size: 1rem;
+            transition: all 0.3s;
+        }
+
+        &:hover {
+
+            .storm-header__icon,
+            .storm-header__text {
+                color: #e7e211;
+            }
+        }
+    }
+
+    &__logo-link {
+        font-size: 2rem;
+        font-weight: 700;
+    }
+}

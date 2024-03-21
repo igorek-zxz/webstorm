@@ -1,0 +1,36 @@
+$content-width: 1240px;
+$font-title: 'Open Sans', sans-serif;
+$font-text: 'Roboto', sans-serif;
+
+$breakpoint_xxl: 1240px;
+$breakpoint_xl: 991px;
+$breakpoint_md: 767px;
+$breakpoint_sm: 480px;
+
+$color-white: #fff;
+$color-black: #000;
+$color-darkGrey: #444;
+
+@mixin desktop() {
+    @media (max-width: $breakpoint_xxl) {
+        @content;
+    }
+}
+
+@mixin laptop() {
+    @media (max-width: $breakpoint_xl) {
+        @content;
+    }
+}
+
+@mixin tablet() {
+    @media (max-width: $breakpoint_md) {
+        @content;
+    }
+}
+
+@mixin mobile() {
+    @media (max-width: $breakpoint_sm) {
+        @content;
+    }
+}
