@@ -3,11 +3,11 @@
 .storm-footer {
     display: block;
     background-color: $color-darkGrey;
-    border-top: 5px solid $color-yellow;
+    border-top: .375rem solid $color-yellow;
 
     &__row {
         max-width: $content-width;
-        padding: 3rem 20px 1rem;
+        padding: 3rem 1.25rem 1rem;
         margin-left: auto;
         margin-right: auto;
         display: flex;
@@ -106,7 +106,7 @@
 
     &__title {
         color: $color-white;
-        font-size: 1.5rem;
+        font-size: $fz-h3;
     }
 
     &__subtitle {

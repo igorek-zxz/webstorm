@@ -30,8 +30,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     font-family: $font-text;
-    cursor: default;
-    line-height: 1.5;
+    line-height: 1.4;
     font-size: 1rem;
     font-weight: 400;
     color: $color-black;
@@ -41,10 +40,22 @@ main {
     flex: 1 1 auto;
 }
 
-a {
-    cursor: pointer;
+h1 {
+    font-size: $fz-h1;
 }
 
-p {
-    font-size: 1rem;
+h2 {
+    font-size: $fz-h2;
+}
+
+h3 {
+    font-size: $fz-h3;
+}
+
+h4 {
+    font-size: $fz-h4;
+}
+
+h5 {
+    font-size: $fz-h5;
 }
