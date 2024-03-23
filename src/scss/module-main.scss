@@ -1,21 +1,22 @@
 @import './variables.scss';
 //@import './fonts.scss';
 @import './header.scss';
+@import './footer.scss';
 
 html {
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 
-    @include desktop {
+    @include laptop {
         font-size: 15px;
     }
 
-    @include laptop {
+    @include tablet {
         font-size: 14px;
     }
 
-    @include tablet {
+    @include mobile-rotate {
         font-size: 13px;
     }
 
@@ -30,6 +31,10 @@ body {
     min-height: 100vh;
     font-family: $font-text;
     cursor: default;
+    line-height: 1.5;
+    font-size: 1rem;
+    font-weight: 400;
+    color: $color-black;
 }
 
 main {

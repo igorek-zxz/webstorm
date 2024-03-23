@@ -10,20 +10,21 @@ $breakpoint_sm: 480px;
 $color-white: #fff;
 $color-black: #000;
 $color-darkGrey: #444;
+$color-yellow: #e7e211;
 
-@mixin desktop() {
+@mixin laptop() {
     @media (max-width: $breakpoint_xxl) {
         @content;
     }
 }
 
-@mixin laptop() {
+@mixin tablet() {
     @media (max-width: $breakpoint_xl) {
         @content;
     }
 }
 
-@mixin tablet() {
+@mixin mobile-rotate() {
     @media (max-width: $breakpoint_md) {
         @content;
     }

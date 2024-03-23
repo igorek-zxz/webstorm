@@ -3,12 +3,12 @@
 
 .storm-header {
     display: block;
-    overflow: hidden;
-    color: $color-white;
+    background-color: $color-white;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.4);
 
     &__row {
         width: 100%;
+        overflow: hidden;
     }
 
     &__row-first {
@@ -37,13 +37,13 @@
 
         & .storm-header__contact-link {
             &:last-child {
-                @include laptop {
+                @include tablet {
                     display: none;
                 }
             }
 
             &:nth-child(2) {
-                @include tablet {
+                @include mobile-rotate {
                     display: none;
                 }
             }
@@ -64,6 +64,7 @@
             color: $color-white;
             transition: all 0.3s;
 
+            &,
             svg {
                 width: 20px;
                 height: 20px;
@@ -81,7 +82,7 @@
 
             .storm-header__icon,
             .storm-header__text {
-                color: #e7e211;
+                color: $color-yellow;
             }
         }
     }
