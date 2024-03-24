@@ -47,7 +47,21 @@
                         LOGO
                     </a>
                 </div>
-                <div class="storm-header__right">MENU</div>
+                <nav class="storm-header__right">
+                    <?php wp_nav_menu( [
+                        'theme_location'  => 'header_menu',
+                        'container'       => false,
+                        'container_class' => '',
+                        'container_id'    => '',
+                        'menu_class'      => 'storm-menu',
+                        'menu_id'         => '',
+                        'echo'            => true,
+                        'fallback_cb'     => '',
+                        'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
+                        'depth'           => 3,
+                        'walker'          => new Storm_Walker_Nav_Menu(),
+                    ] );?>
+                </nav>
             </div>
         </div>
     </header>

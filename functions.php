@@ -4,6 +4,11 @@ if (! function_exists('webstorm_setup')){
     function webstorm_setup(){
         add_theme_support( 'title-tag' );
 	    add_theme_support( 'post-thumbnails' );
+        register_nav_menus( [
+            'header_menu' => 'Меню в шапке',
+            'mobile_menu' => 'Мобильное Меню',
+            'footer_menu' => 'Меню в подвале'
+        ] );
     }
     add_action( 'after_setup_theme', 'webstorm_setup' );
 }
@@ -17,6 +22,9 @@ function webstorm_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'webstorm_scripts' );
 
+
+// свой класс построения меню:
+require get_parent_theme_file_path( '/inc/storm-walker-menu.php' );
 
 // SVG icons functions and filters
 require get_parent_theme_file_path( '/inc/icon-functions.php' );
