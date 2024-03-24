@@ -58,7 +58,7 @@
                         'echo'            => true,
                         'fallback_cb'     => '',
                         'items_wrap'      => '<ul id="%1$s" class="%2$s">%3$s</ul>',
-                        'depth'           => 3,
+                        'depth'           => 2,
                         'walker'          => new Storm_Walker_Nav_Menu(),
                     ] );?>
                 </nav>
